@@ -4,7 +4,9 @@
 
 Prof. Lorena Rabelo
 
-https://app.netlify.com/sites/m-de-maravilhosa-on17/overview
+Página Inicial   
+https://m-de-maravilhosa-on17.netlify.app
+
 
 ### Links bacanas se bater uma dúvida
 
