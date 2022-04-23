@@ -4,7 +4,9 @@
 
 Prof. Lorena Rabelo
 
-m-de-maravilhosa-on17.netlify.app
+Página Inicial   
+https://m-de-maravilhosa-on17.netlify.app
+
 
 ### Links bacanas se bater uma dúvida
 
@@ -13,7 +15,7 @@ m-de-maravilhosa-on17.netlify.app
 * [Guia Flex Box](https://origamid.com/projetos/flexbox-guia-completo/)
 * [Guia como subir o código Netlify(apartir do minuto 6 do vídeo](https://www.youtube.com/watch?v=wpbo183GXIA)
 
-### Objetivos da aula (Sábado e Quarta)  :metal:
+### Objetivos da aula (Domingo e Quinta)  :metal:
 1. Revisão rápida CSS
 2. Explicação sobre o projeto 
 3. Escolher a maravilhosa e colocar até segunda-feira na planilha 
