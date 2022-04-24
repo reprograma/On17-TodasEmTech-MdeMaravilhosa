@@ -59,6 +59,19 @@
   
   
   /* HEADER */
+.header {
+  min-height: 80vh;
+width: 100%;
+background-size: cover;
+background-image: url(../img/malala02.jpg);
+display: flex;
+align-items: flex-end;
+justify-content: center;
+margin-bottom: 10px;
+color: #fff;
+text-shadow: 5px 5px 8px #000000;
+padding-bottom: 10px;
+}
   
   
   
@@ -70,15 +83,141 @@
   
   /* SECAO Maravilhosa */
   
-  
-  
-  /* AUTORA */
-  
+.titulo {
+  font-family: 'Roboto Slab';
+  font-size: 15px;
+text-align: center;
+  color: #63458A;
+  margin: 50px;
+}
 
+.container { 
+  max-width: 1000px;
+  margin: 0 auto;
+}
+  
+.mini-bio {
+  display: flex;
+  max-width: 620px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.foto-bio {
+  height: 214px;
+  width: 210px;
+  left: 450px;
+  top: 820px;
+  border-radius: 10px;  
+  margin-bottom: 10px;
+  margin-right: 50px;
+}
+
+.bio {
+border-radius: nullpx;
+text-align: justify;
+margin-left: 10px;
+padding-top: 20px;
+}
+
+  /* HISTÓRIA */
+.historia {
+  padding: 50px;
+}
+
+.historia-titulo h3{
+color: #63458A;
+}
+  .foto-malala {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+  /* AUTORA */
+  .autora {
+    background-color: #E4B7E5;
+    height: 260px;
+    display: flex;
+    width: 0 auto;
+    justify-content: center;
+  }
+  
+  .autora__container{ 
+    display: flex;
+  }
+  
+  .autora__img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .img-responsive1 {
+    max-width: 200px;
+margin-top: 30px;
+    border-radius: 20px;
+  }
+  
+  .autora__info {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-left: 36px;
+  }
   
   
   /* FOOTER */
-  
+
+
+   /* CITACAO */
+.citacao {
+  font-size: 30px;
+  border: 1px solid #674582;
+  text-align: center;
+  color: #63458A;
+  line-height: 45px;
+  padding: 40px 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 40px;
+}
+
+ /* BOTAO */
+
+ .content {
+ color: white;
+ background-color: #c083b9;
+ display:block;
+ max-width: 200px;
+ text-align: center;
+ margin: 0 auto;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ border-radius: 5px;
+ margin: 50px;
+ margin-left: 550px;
+ }
+
+
+.rodape p{
+    color: #ffffff;
+    text-align: center;
+    background-color: #674582;
+    padding: 10px 10px;
+}
   
   /* MEDIA QUERY */
+
+  @media screen and (max-width: 1024px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      max-width: 656px;
+    }
+  }
+
   
