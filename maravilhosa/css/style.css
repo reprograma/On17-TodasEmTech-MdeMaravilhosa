@@ -23,13 +23,14 @@
   /* NAVBAR */
   
   .navbar {
-    background-color: #674582;
+    background-color: rgb(185, 53, 53);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
     padding: 24px;
     z-index: 99;
     position: fixed;
     width: 100%;
     height: 104px;
+    
   }
   
   .navbar__logo {
@@ -60,25 +61,184 @@
   
   /* HEADER */
   
+  .header{
+    min-height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/maria\ felipa\ 4\ .jpn.jpg);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+        
+  }
   
+
+ .minibio_main{
+   display: flex;
+   max-width: 954px;
+   margin: 0 auto;
+
+ }
+ .minibio_main_texto{
+   padding-top: 15%;
+   text-align: justify;
+   
+ }
+ .main_section_1_img img{
+    width: 100%;
   
-  
+ }
+
+ .main_section_1_img{
+   width: 230%;
+   padding-top: 5%;
+   padding-bottom: 5%;
+   padding-right: 5%;
+ }
+
+ .main_section_2_img img{
+   width: 100%;
+ }
+
+ .main_section_2_img{
+   width: 1200px;
+   padding-top: 5%;
+   padding-bottom: 5%;
+   
+ }
+
+ .titulo_principal{
+  padding-top: 5%;
+  padding-bottom: 1%;
+  text-align: center;
+  font-size: 30px;
+ }
+
+
+ .citacao{
+  font-size: 20px;
+  border: 1px solid black;
+  padding: 36px;
+  line-height: 50px;
+  margin: 48px auto;
+
+ }
+
+ .sua_historia_p{
+   padding-bottom: 1.5%;
+   font-size: 180%;
+   
+ }
+
+p{
+  font-size: 150%;
+  padding-bottom: 5%;
+  text-align: justify;
+}
+
   /* --- BOTAO --- */
     
   
-  
-  
+    
   /* SECAO Maravilhosa */
   
-  
+  .container{
+    max-width: 1260px;
+    margin: 0 auto;
+    
+  }
   
   /* AUTORA */
   
 
+
+  .autora_container{
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5%;
+    background-color: rgb(185, 53, 53);
+    
+    
+
+  }
+  .autora_img img{
+    width: 100%;
+  }
   
-  
+  .autora_img{
+    width: 20%;
+    max-width: 260px;
+    padding-bottom: 3%;
+    
+  }
+
+  .span_autora{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding-left: 3%;
+    font-size: 150%;
+    
+    
+    
+  }
+
+  .button{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+    font-size: 180%;
+    font-style: bold;
+    background-color: white;
+    
+    
+  }
   /* FOOTER */
+  .footer_img img{
+    width: 7.5%;
+    
+    
+  }
   
-  
+
+  .footer_div{
+    display: flex;
+    padding-top: 5%;
+    padding-left: 15%;
+    padding-bottom: 5%;
+    text-align: center;
+    background-color: rgb(226, 99, 52);
+    justify-content: center;
+     
+    
+  }
+
+  .footer_div_maravilhosa{
+    padding-left: 15%;
+    
+  }
+
+  .footer_di_2{
+    display: flex;
+    font-size: 85%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    justify-content: center;
+    background-color: white;
+  }
+
+
+
   /* MEDIA QUERY */
-  
+  @media screen and (max-widht: 1024) {
+    .container{
+      max-width: 768px;
+    }
+  }
+
+  @media screen and (max-widht: 768) {
+    .container{
+      max-width: 768px;
+    }
+  }
