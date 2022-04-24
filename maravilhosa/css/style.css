@@ -78,7 +78,49 @@
   
   
   /* FOOTER */
-  
-  
+ 
+.rodape {
+  background-color: #323534;
+  color: white;
+}
+
+.rodape__principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rodape__principal > * {
+  margin: 16px 0;
+}
+
+.rodape__navegacao > li {
+  font-size: 14px;
+  margin: 8px;
+}
+
+.rodape__navegacao a {
+  transition: all 0.5s;
+}
+
+.rodape__navegacao a:hover {
+  color: #c083b9;
+}
+
+.rodape__logo {
+  max-width: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.rodape__cc {
+  width: 100%;
+  background-color: #292a2a;
+  font-size: 14px;
+  opacity: 0.5;
+  text-align: center;
+  padding: 10px;
+}
+
   /* MEDIA QUERY */
   
