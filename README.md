@@ -26,4 +26,3 @@ https://m-de-maravilhosa-on17.netlify.app
 
 1. Adicionar página sobre a autora 
 2. Na sua página, retirar as redes sociais da reprograma e linkar suas redes socias no footer
-3. Se der tempo, algumas pessoas podem apresentar na quarta :)
