@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 14px;
   }
 
   ul {
@@ -12,6 +13,10 @@
   
   li {
     list-style: none;
+  }
+
+  .img-responsive {
+    width: 100%;
   }
   
   a {
@@ -23,7 +28,7 @@
   /* NAVBAR */
   
   .navbar {
-    background-color: #674582;
+    background-color: #35BD06;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
     padding: 24px;
     z-index: 99;
@@ -56,29 +61,279 @@
     font-weight: bold;
   }
   /* -------------------------------------------------------------------------------- */
+ 
+  .header {
+    min-height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-image: url(../img/banner-img.png);
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: start;
+  }
+
+  .nome{
+    margin-left: 1.8rem;
+    color: #fff;
+    background-color: #35BD06;
+    padding: 0.4rem;
+    border-radius: 10px 0;
+    font-size: 24px;
+  }
+   
   
-  
-  /* HEADER */
-  
-  
-  
-  
-  /* --- BOTAO --- */
+  main{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+    padding:  0 2rem;
+  }
+
+  .sub-titulo{
+    padding: 2rem;
+    text-align: center;
+    color: #103b02;
+    font-size: 24px;
+  }
+
+  .mini-bio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .img-mini-bio{
+    width: 18%;
+    border-radius: 10px;
+    padding-right: 2rem;
+    min-width: 200px;
     
+  }
+
+  .mini-bio p{
+    color: rgb(182, 180, 177);
+    text-align: start;
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: justify;
+    max-height: 600px;
+
+  }
+
+  blockquote{
+    padding: 4rem;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    color: #103b02;
+    font-weight: bold;
+    border: solid 1px #35BD06;
+  }
+
+  .titulo-historia{
+    padding-top: 2rem;
+    color: #103b02;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .primeiro-paragrafo{
+    padding-top: 1rem;
+  }
+
+  .historia p{
+    color: rgb(182, 180, 177) ;
+    font-size: 18px;
+    text-align: justify;
+    font-weight: lighter;
+  }
+
+  .class_foto-historia{
+    padding: 1.5rem 0;
+  }
+
+  .autora{
+    background-color: #35BD06;
+    margin: 2rem 0;
+    width: 100%;
+  }
+
+  .box-autora-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-autora{
+      width: 15%;
+      padding-right: 1.5rem;
+      min-width: 200px;
+  }
+
+  .info-autora{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: justify;
+
+  }
+
+  .botao{
+    display: block;
+    text-align: center;
+    margin: 6rem;
+  }
+
+  .botao-link{
+    background-color: #35BD06;
+    padding: 1rem;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    
+  }
+
+  .botao-link:hover{
+    background-color: rgb(248, 248, 101);
+    color: #103b02;
+  }
+
+  .rodape {
+    background-color: #323534;
+    color: white;
+  }
   
+  .rodape__principal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
   
+  .rodape__principal > * {
+    margin: 16px 0;
+  }
   
-  /* SECAO Maravilhosa */
+  .rodape__navegacao > li {
+    font-size: 14px;
+    margin: 8px;
+  }
   
+  .rodape__navegacao a {
+    transition: all 0.5s;
+  }
   
+  .rodape__navegacao a:hover {
+    color: #35BD06;
+  }
   
-  /* AUTORA */
+  .rodape__logo {
+    max-width: 200px;
+    align-items: center;
+    justify-content: center;
+  }
   
+  .rodape__cc {
+    width: 100%;
+    background-color: #292a2a;
+    font-size: 14px;
+    opacity: 0.5;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .rodape__redes-sociais img{
+    width: 10%;
+  }
 
   
-  
-  /* FOOTER */
-  
-  
   /* MEDIA QUERY */
+
+  @media (max-width: 770px) {
+    .navbar__nav {
+      display: none;
+    }
+    .navbar__nav--hamburguer {
+      display: block;
+      height: 36px;
+    }
+    .navbar {
+      height: 96px;
+    }
+    .navbar__logo {
+      max-width: 196px;
+    }
+    .container {
+      max-width: 80vw;
+    }
+
+    .rodape__principal{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+  
+    
+  }
+
+  @media (max-width: 600px){
+
+    *{
+      font-size: 12px;
+    }
+
+    .sub-titulo{
+      font-size: 1.8rem;
+    }
+
+    
+
+    .mini-bio{
+      flex-direction: column;
+    }
+
+    .img-mini-bio{
+      min-width: 350px;
+    }
+
+
+    .mini-bio p{
+      padding-top: 1rem;
+    }
+
+    .titulo-historia{
+      font-size: 1.5rem;
+    }
+    
+    
+  }
+
+  @media (max-width: 380px){
+    *{
+      font-size: 10px;
+    }
+
+    .header{
+      width: 90vh;
+      background-position: center;
+    }
+
+    .botao-link{
+      font-size: 14px;
+    }
+    .rodape__principal {
+      flex-direction: column;
+    }
+
+  }
+  
   
