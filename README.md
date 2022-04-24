@@ -18,7 +18,7 @@ https://m-de-maravilhosa-on17.netlify.app
 ### Objetivos da aula (Domingo e Quinta)  :metal:
 1. Revisão rápida CSS
 2. Explicação sobre o projeto 
-3. Escolher a maravilhosa e colocar até segunda-feira na planilha 
+3. Desenvolvimento seguindo o [figma](https://www.figma.com/file/NQz2gzpHUgqdpvF0yJnZ1J/M-de-Maravilhosa---on17?node-id=4%3A0)
 5. Colocar a foto da maravilhosa na pasta "img" do drive até segunda-feira
 6. Colocar o link do projeto na planilha até sexta-feira 
 
