@@ -89,7 +89,7 @@ a {
 /* SECAO Maravilhosa */
 
 .container {
-  max-width: 1260px;
+  max-width: 1180px;
   margin: 0 auto;
 }
 
@@ -115,21 +115,23 @@ h2 {
 
 .minibio p {
   width: 80%;
-  font-size: 30px;
+  font-size: 1rem;
 }
 
 /* citacao */
 
-.h3_citacao {
+.h3_historia {
   margin-bottom: 18px;
+  font-size: 26px;
 }
 
 .citacao {
-  font-size: 36px;
+  font-size: 1rem;
   border: 1px solid #674582;
-  padding: 36px;
+  padding: 10px 6px;
   line-height: 50px;
   margin: 48px auto;
+  text-align: center;
 }
 
 .img_citacao {
@@ -174,9 +176,13 @@ h2 {
   margin-left: 36px;
 }
 
+.autora__info span {
+  margin-bottom: 7px;
+}
+
 .todas_elas_container {
   display: flex;
-  height: 210px;
+  height: 200px;
   justify-content: center;
   align-items: center;
 }
@@ -193,12 +199,25 @@ h2 {
   font-weight: bold;
 }
 
+/* FOOTER */
+
 .footer_container {
   display: flex;
   background-color: #323534;
   max-height: 210px;
   justify-content: center;
   align-items: center;
+  height: 210px;
+  flex-wrap: wrap;
+}
+
+.footer_nav li {
+  color: #fff;
+  margin-bottom: 7px;
+}
+
+.footer_container img {
+  margin: 0px 5%;
 }
 
 .footer_redes_sociais {
@@ -211,7 +230,18 @@ h2 {
   margin: 0px 10px;
 }
 
-/* FOOTER */
+.footer_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 59px;
+  background-color: #292a2a;
+}
+
+.footer_text p {
+  color: #ffff;
+  font-size: 14px;
+}
 
 /* MEDIA QUERY */
 
