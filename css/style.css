@@ -17,6 +17,9 @@ li {
 /* define que as imagens tem que ter o tamanho máximo da div mãe */
 .img-responsive {
   width: 100%;
+  height: 100%;
+  /* garante que a imagem vai ocupar todo o conteúdo da div sem distorce */
+  object-fit: cover;
 }
 
 /* define o tamanho da caixa */
@@ -68,6 +71,7 @@ li {
   width: 100%;
   background-size: cover;
   background-image: url(../img/bg-banner.png);
+  display: flex;
 }
 
 .header__box {
@@ -184,22 +188,24 @@ li {
   flex-wrap: wrap;
   justify-content: space-around;
   color: #63458a;
+  margin-bottom: 96px;
 }
 
 .maravilhosas__perfil {
   margin: 2rem;
   text-align: center;
+  cursor: pointer;
+  width: 160px;
+  height: 160px;
 }
 
 .maravilhosas__perfil img {
-  background-color: #63458a;
   border-radius: 10px;
 }
 
 .maravilhosas__perfil a img {
   transition: all 0.5s;
-  width: 160px;
-  height: 160px;
+
 }
 
 
