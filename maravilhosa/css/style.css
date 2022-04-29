@@ -59,6 +59,10 @@ a {
   margin: 0 16px;
   font-weight: bold;
 }
+
+.navbar__nav--hamburguer {
+  display: none;
+}
 /* -------------------------------------------------------------------------------- */
 
 /* HEADER */
@@ -274,7 +278,7 @@ h3 {
     max-width: 425px;
   }
   
-  .nav-header {
+  .navbar__nav {
     display: none;
   }
 
