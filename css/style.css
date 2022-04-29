@@ -68,6 +68,7 @@ li {
   width: 100%;
   background-size: cover;
   background-image: url(../img/bg-banner.png);
+  transform: translateY(100%);
 }
 
 .header__box {
