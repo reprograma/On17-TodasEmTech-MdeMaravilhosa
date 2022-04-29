@@ -56,29 +56,207 @@
     font-weight: bold;
   }
   /* -------------------------------------------------------------------------------- */
-  
+  /* define que as imagens tem que ter o tamanho máximo da div mãe */
+  .img-responsive{
+    width: 100%;
+  }
   
   /* HEADER */
+  .header{
+    min-height: 80vh;
+    width: 100%;
+    /*geralmente corrige distorção*/
+    background-size: cover;
+    background-image: url(../img/hilda\ -\ Copia.jpg);
+    background-position: top;
+    display: flex;
+    /* Aligne é para eixo Y */
+    align-items: flex-end;
+    /*justify content é para o eixo X*/
+    justify-content: center;
+  }
+  .header_titulo{
+    padding-top: 28rem;
+    font-size: 3rem;
+    font-weight: 600;
+    color: black;
+    text-shadow: 4px 3px 9px #000;
+    text-align: center;
+
+  }
   
-  
-  
-  
+  main{
+    padding: 0 15%;
+    color:black
+  }
   /* --- BOTAO --- */
     
   
   
   
   /* SECAO Maravilhosa */
-  
-  
+  .container{
+    max-width: 1260px;
+    margin: 0 auto;
+  }
+  h2{
+    font-size: 36px;
+    text-align: center;
+    margin: 36px auto;
+  }
+  .minibio{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .minibio-Hilda img{
+    width: 7rem;
+    border-radius: 10px;
+  }
+
+  .minibio p{
+    width: 80%;
+    text-align: justify;
+  }
+
+  h3{
+    font-size: 36px;
+    text-align: center;
+    margin: 36px auto;
+  }
+  .historia-Hilda p{
+    margin: 1rem 0;
+    text-align: justify;
+  }
+  .foto-hilda-historia img{
+    width: 690px;
+  }
+  blockquote{
+    font-weight: bold;
+    border: 1px solid lightgrey;
+    margin: 2rem 0;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 20px;
+  }
   
   /* AUTORA */
-  
-
-  
+  .autora{
+    background-color: #e4b7e5;
+    padding: 0 20%;
+  }
+  .autora .Benja-Ferreira-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .autora .Benja-Ferreira-container .Benja-Ferreira{
+    background-color: #63458a;
+  }
+  .autora .img-responsive{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0.5rem;
+  }
+  .Benja-Ferreira-container .Benja-Ferreira-texto{
+    width: 40%;
+    color: black;
+    font-weight: bold;
+  }
+  .botao{
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+  }
+.botao a{
+  background-color:  #c083b9;
+  border: 2px solid #c083b9;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  height: 40px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
   
   /* FOOTER */
+  .rodape{
+    background-color: #323534;
+    color: white
+  }
+  .rodape_principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15%;
+  }
+  .rodape_principal>*{
+    margin: 16px;
+  }
+  .rodape_navegacao>li{
+    font-size: 14px;
+    margin: 8px;
+    text-align: center;
+  }
+  .rodape_navegacao a{
+    transition: all 0.5s;
+  }
+  .rodape_navegacao a:hover{
+    color:#c083b9
+  }
+  .rodape_logo{
+    max-width: 200px;
+    align-items: center;
+    justify-content: center;
+  }
+  .rodape_cc{
+    width: 100%;
+    background-color: #292a2a;
+    font-size: 14px;
+    opacity: 0.5;
+    text-align: center;
+    padding: 10px;
+  }
   
   
   /* MEDIA QUERY */
+  @media screen and (max-width: 1024px){
+    .foto-hilda-historia img{
+      width: 100%;
+    }
+  }
+  @media  screen and (max-width:770px) {
+    .minibio{
+      flex-direction: column;
+    }
+    .minibio img{
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    .minibio p{
+      width: 100%;
+    }
+    .Benja-Ferreira-container{
+      padding: 0;
+      margin: 0;
+    }
+    .Benja-Ferreira .Benja-Ferreira-texto{
+      font-size:0.8rem;
+    }
+    .rodape_principal{
+      flex-direction: column;
+    }
   
+
+  @media  screen and (max-width:468px){
+    .navbar__nav{
+      display: none;
+    }
+    .Benja-Ferreira-container .Benja-Ferreira-texto{
+      font-size:0.6rem
+    }
+  }
+}
