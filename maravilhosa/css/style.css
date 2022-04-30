@@ -158,7 +158,7 @@ h3 {
 }
 
 .foto-historia{
-  margin: 2.5rem 0 2.5rem 0;
+  margin: 2.5rem 2.5rem 0 0 ;
   justify-content: center;
   width: 100%;
 
@@ -271,11 +271,6 @@ padding: 10px;
 }
 
 /* MEDIA QUERY */
-@media screen and (max-width: 1024px) {
-.foto-ruth-historia3 img  {
-  width: 100%;
-}
-}
 @media screen and (max-width: 770px) {
 
 .titulo-header, 
