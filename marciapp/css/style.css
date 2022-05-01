@@ -1,0 +1,448 @@
+
+* {
+    box-sizing: border-box;
+    padding: 50;
+    margin: 50;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: 
+  }
+
+  ul {
+    padding:
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+      text-decoration: none;
+      color: inherit;
+      margin: 2px;
+  }
+  
+  /* define que as imagens tem que ter o tamanho máximo da div mãe */
+.img-responsive {
+  width: 50%;
+}
+  
+  /* NAVBAR */
+  
+  .navbar {
+    background-color:rgb(0, 0, 0);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 24px;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    height: 74px;
+  }
+  
+  .navbar__logo {
+    max-width: 200px;
+  }
+  
+  .navbar__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .navbar__nav {
+    font-size: 18px;
+    color: ;
+    display: flex;
+  }
+  
+
+.navbar__nav > li {
+    margin: 0 16px;
+    font-weight: bold;
+    color:rgb(210, 97, 27);
+  }
+  /* -------------------------------------------------------------------------------- */
+  
+  
+  /* HEADER */
+
+  .header {
+    min-height: 200vh;
+    width: 200%;
+    /* geralmente corrigi distorçao */
+    background-size: cover;
+    background-image: url(../img/capa\ rachel.JPG);
+    background-position: center;
+    display: flex;
+    /* align é para eixo Y */
+    align-items: flex-end;
+    /* justify é para eixo X */
+    justify-content: center;
+    max-width: 100%;
+    
+  } 
+  .header__titulo {
+    margin-left: 230%;
+    margin-bottom: 40px;
+    font-size: 40px;
+    color: #fff;
+  }
+    
+   
+  
+  /* --- BOTAO --- */
+  
+  /* SECAO Maravilhosa */
+
+  .container {
+    max-height: 1260px;
+    margin:0 auto;
+  }
+  h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0% ;
+    margin: 36px auto;
+    display: block;
+    margin-block-start: 0.83em;
+      margin-block-end: 0.83em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+      padding: 0.15%;
+      color: orangered
+  }
+
+  .minibio {
+    display: flex;
+    max-width: 954px;
+    margin: 0 auto;
+  }
+  .minibio__img {
+    width: 210px;
+    height: 210px;
+    border-radius: 1rem;
+    
+  }
+  @media (min-width:640px) {
+    .minibio__img {
+      margin-right: 48px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .minibio__img {
+      text-align: center;
+    }
+  }
+
+  .minibio p {
+    width: 80%;
+    text-align:inherit;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display:block;
+    margin-block-start: 1em;
+    margin-block-end:  0px;
+    padding: 50 100%;
+    color: black;
+    font-size: 20px;
+  }
+  
+  /* citacao */
+       
+
+.citacao {
+  font-weight: bold;
+  border: 2px solid lightgrey;
+  margin: 2rem 0;
+  padding: 2rem 0;
+  text-align: center;
+  box-sizing:border-box;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+  padding: 5 20%;
+  color: black;
+  font-size: 25px;
+}
+h3 {
+  font-size: 25px;
+  text-align: center;
+  margin: 36px auto;
+  box-sizing: border-box;
+  padding: 0;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  padding: 0 15%;
+  color: orangered;
+}  
+p{
+  font-size: 18px;
+  text-align: justify;
+  font-weight: 500;
+  padding-top: 1rem;
+  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: black;
+  }
+
+
+
+.class_foto-historica {
+  padding: 1.5rem 0;
+}
+
+.img-responsive{
+width: 100%;
+}
+
+   
+  /* AUTORA */
+  .autora {
+    background-color: black;
+    margin: 2rem 0;
+    width: 100%;
+  }
+  
+  .autora__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center ;
+      align-items: center;
+
+  } 
+  .autora__img {
+    max-width: 200px;
+    border-radius: 100%;
+    padding-top: 0.35rem;
+  }
+  .img-responsive {
+    width: 100%;
+    border-radius: 10%;
+  }
+.autora__info {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-left: 36px;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: bold;
+  color: #ec6511;
+}
+
+.botao a{
+  background-color: black
+  border: 6px solid #c083b9;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  height: 10px;
+  width: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botao {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+/* FOOTER */
+
+.rodape {
+  background-color: #323534;
+  color:black;
+  }
+  
+  .rodape p{
+    color: black;
+    font-size: 15px;
+  }
+  .rodape__principal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+  }
+  
+  .rodape__principal > * {
+    margin: 10px 0;
+  }
+  
+  .rodape__navegacao > li {
+    font-size: 14px;
+    margin: 8px;
+  }
+  
+  .rodape__navegacao a {
+    transition: all 0.5s;
+    color: rgb(244, 116, 12);
+  }
+  
+  .rodape__navegacao a:hover {
+    color:orangered;
+  }
+  
+  .rodape__logo {
+    max-width: 100px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .rodape__redes-sociais img{
+    width: 20%;
+  }
+  
+  @media (max-width: 640px) {
+    .rodape__redes-sociais img {
+      width: 50px;
+      height: 50px;
+    }
+  
+  .rodape__cc {
+    width: 90%;
+    background-color: #292a2a;
+    font-size: 14px;
+    opacity: 0.5;
+    text-align: center;
+    padding: 10px;
+  
+  }
+  
+  .rodape__cc p{
+    text-align: center;
+  
+     }
+  
+  /* MEDIA QUERY */
+  
+  @media (max-width: 770px) {
+  
+    .navbar__nav {
+      display: none;
+    }
+  
+    .navbar {
+      height: 96px;
+    }
+    
+    .navbar__logo {
+      max-width: 196px;
+    }
+  
+    .header h1{
+      font-size: 3rem;
+    }
+  
+    .container {
+      max-width: 0vh;
+      padding: 0.5rem;
+    }
+  
+    .rodape__principal{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 2rem;
+    }
+    
+  
+  
+  @media (max-width: 300px){
+  
+    .header{
+      width: 85vh;
+    }
+    
+    .header h1{
+      font-size: 3rem;
+    }
+  
+    .titulo-minibio{
+      font-size: 2rem;
+    }
+  
+    .minibio{
+      flex-direction: column;
+    }
+  
+    .minibio p{
+      font-size: 1.5rem;
+    }
+  
+    .minibio_img{
+      min-width: 30vh;
+      min-height: 30vh;
+    }
+  
+  
+    .minibio p{
+      padding-top: 1rem;
+    }
+  
+    .titulo-historia{
+      font-size: 1.5rem;
+    }
+  
+    .historia p{
+      font-size: 2rem;
+    }
+    
+  }
+  
+  @media (max-width: 640px){
+    *{
+      font-size: 770px;
+    }
+  
+    .header{
+      width: 90vh;
+      background-position: center;
+    }
+    
+    .header h1{
+      font-size: 3rem;
+    }
+  
+    .btn{
+      font-size: 10px;
+      margin-top: 5rem;
+    }
+  
+  
+    .rodape__principal {
+      flex-direction: column;
+    }
+  
+  }
+  
+
+
+
+
+
+  
+ 
