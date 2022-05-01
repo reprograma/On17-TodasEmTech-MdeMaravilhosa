@@ -57,28 +57,333 @@
   }
   /* -------------------------------------------------------------------------------- */
   
-  
+  /* define que as imagens tem que ter o tamanho máximo da div mãe */
+.img-responsive {
+  width: 100%;
+}
   /* HEADER */
-  
+
+  .header {
+  min-height: 80vh;
+  width: 100%;
+  /* geralmente corrigi distorcao */
+  background-size: cover;
+  background-image: url(../img/carolina.webp);
+  background-position: top;
+  display: flex;
+  /* align é para eixo Y */
+  align-items: flex-end;
+  /* justify é para eixo X */
+  justify-content: center;
+}
+
+.header h1{
+  margin-bottom: 1.5rem;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-responsive{
+  width: 100%;
+} 
+
+h1{
+  color: black;
+}
+.header__titulo {
+
+}
   
   
   
   /* --- BOTAO --- */
-    
+  .botao{
+    display: inline-block;
+    padding: 30px 100px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background: #994D3A;
+    color: #eee;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 500ms ease;
+    margin-bottom: 4rem;
+  }   
+  
+  .botao:hover{
+    cursor: pointer;
+    background: #4b1b18;
+  }
+  
+  .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   
   
   /* SECAO Maravilhosa */
   
+  .container {
+    max-width: 1260px;
+    margin: 0 auto;
+  }
+
+h2 {
+   font-size:36px;
+   text-align: center;
+   margin: 36px auto;
+
+}
+
+.minibio{
+  display: flex;
+  max-widht:954px;
+  margin: 0 auto;
+}
   
+.minibio p{
+  width: 80%;
+  font-size: 30px;
+  text-align: justify;
+}
+
+.minibio_img{
+  width: 210px;
+  height: 210px;
+  border-radius: 16px;
+  margin-right: 48px;
+}
+
+.citacao{
+  margin: 2rem;
+  font-size: 36px;
+  border: 1px solid #C27A53;
+  justify-content: center;
+  padding: 3rem;
+  text-align: center;
+  font-weight: bold;
+  line-height: 50px;
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.historia{
+  font-size: 2rem;
+  line-height: 45px;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.historia h3{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.historia img{
+  margin: 2.5rem 0 2.5rem 0;
+  justify-content: center;
+}
+
   
   /* AUTORA */
   
+  .autora{
+    background-color: #C27A53;
+    height: 310px;
+    display: flex;
+    /*Garante que está centralizado no eixo x*/
+    justify-content: center;
+    margin: 4rem 0 4rem 0;
+  }
+  
+  .autora-container{
+    display: flex;
+    margin: 0 auto;
+  
+  }
+  
+  .autora img{
+    max-width: 310px;
+  }
+    
+  .autora_info{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-left: 36px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #592D22;
+  }
+  
+  .autora_info a:hover{
+    color: #E5AB9C;
+    transition: 0.8s;
+  }
+  .img-responsive {
+    width: 100%;
+    height: 100%;
+  }
 
   
   
   /* FOOTER */
   
+  .rodape {
+    background-color: #4D271D;
+    color: white;
+  }
   
+  .rodape__principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .rodape__principal > * {
+    margin: 16px 0;
+  }
+  
+  .rodape__navegacao > li {
+    font-size: 16px;
+    margin: 8px;
+  }
+  
+  .rodape__navegacao a {
+    transition: all 0.5s;
+  }
+  
+  .rodape__navegacao a:hover {
+    color: #c083b9;
+  }
+  
+  .rodape__logo {
+    max-width: 200px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .rodape__cc {
+    width: 100%;
+    background-color: #292a2a;
+    font-size: 14px;
+    opacity: 0.5;
+    text-align: center;
+    padding: 10px;
+  }
   /* MEDIA QUERY */
-  
+
+  @media (max-width: 770px) {
+
+    .navbar__nav {
+      display: none;
+    }
+
+    .navbar {
+      height: 96px;
+    }
+    
+    .navbar__logo {
+      max-width: 196px;
+    }
+
+    .header h1{
+      font-size: 3rem;
+    }
+
+    .container {
+      max-width: 80vw;
+      padding: 0.5rem;
+    }
+
+    .rodape__principal{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+    
+    
+  }
+
+  @media (max-width: 600px){
+
+    .header{
+      width: 85vh;
+    }
+    
+    .header h1{
+      font-size: 3rem;
+    }
+
+    .titulo-minibio{
+      font-size: 2rem;
+    }
+
+    .minibio{
+      flex-direction: column;
+    }
+
+    .minibio p{
+      font-size: 1.5rem;
+    }
+
+    .minibio_img{
+      min-width: 30vh;
+      min-height: 30vh;
+    }
+
+
+    .minibio p{
+      padding-top: 1rem;
+    }
+
+    .titulo-historia{
+      font-size: 1.5rem;
+    }
+
+    .historia p{
+      font-size: 2rem;
+    }
+    
+    
+    
+  }
+
+  @media (max-width: 400px){
+    
+    *{
+      font-size: 10px;
+    }
+
+    .container{
+      width: 100%;
+    }
+
+    .header{
+      width: 90vh;
+      background-position: center;
+    }
+    
+    .header h1{
+      font-size: 3rem;
+    }
+
+    .btn{
+      font-size: 14px;
+      margin-top: 5rem;
+    }
+
+
+    .rodape__principal {
+      flex-direction: column;
+    }
+
+  }
+
+
