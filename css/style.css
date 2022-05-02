@@ -96,6 +96,70 @@ li {
   max-width: 1024px;
 }
 
+
+
+/* --- SECTION MARAVILHOSAS --- */
+
+.maravilhosas__titulo {
+  color: #63458a;
+  font-size: 20px;
+  text-align: center;
+  margin: 36px 0;
+}
+
+.maravilhosas__box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: #63458a;
+}
+
+.maravilhosas__perfil {
+  margin: 2rem;
+  text-align: center;
+}
+
+.maravilhosas__perfil img {
+  background-color: #63458a;
+  border-radius: 10px;
+}
+
+.maravilhosas__perfil a img {
+  transition: all 0.5s;
+  width: 160px;
+  height: 160px;
+
+}
+
+/* --- BOTAO --- */
+
+.btn {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 16px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.btn_roxo {
+  color: white;
+  background-color: #c083b9;
+  display: block;
+  max-width: 200px;
+  text-align: center;
+  transition: all 0.5s;
+  margin: 0 auto;
+}
+
+.btn_roxo:hover,
+.btn_roxo:focus {
+  transform: translateY(-06px);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  background-color: rgb(192, 156, 188);
+}
+
+
 /* --- FOOTER --- */
 
 .rodape {
@@ -141,68 +205,8 @@ li {
   padding: 10px;
 }
 
-/* --- BOTAO --- */
 
-.btn {
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 16px;
-  border-radius: 5px;
-  font-size: 14px;
-}
-
-.btn_roxo {
-  color: white;
-  background-color: #c083b9;
-  display: block;
-  max-width: 200px;
-  text-align: center;
-  transition: all 0.5s;
-  margin: 0 auto;
-}
-
-.btn_roxo:hover,
-.btn_roxo:focus {
-  transform: translateY(-06px);
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-  background-color: rgb(192, 156, 188);
-}
-
-
-/* --- SECTION MARAVILHOSAS --- */
-
-.maravilhosas__titulo {
-  color: #63458a;
-  font-size: 20px;
-  text-align: center;
-  margin: 36px 0;
-}
-
-.maravilhosas__box {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  color: #63458a;
-}
-
-.maravilhosas__perfil {
-  margin: 2rem;
-  text-align: center;
-}
-
-.maravilhosas__perfil img {
-  background-color: #63458a;
-  border-radius: 10px;
-}
-
-.maravilhosas__perfil a img {
-  transition: all 0.5s;
-  width: 160px;
-  height: 160px;
-}
-
-
+/* RESPONSIVEL*/
 @media (max-width: 768px) {
   .navbar__nav {
     display: none;
