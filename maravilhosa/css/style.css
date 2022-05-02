@@ -1,84 +1,183 @@
-
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  }
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: #674582;
+}
 
-  ul {
-    padding: 0;
-  }
-  
-  li {
-    list-style: none;
-  }
-  
-  a {
-      text-decoration: none;
-      color: inherit;
-      margin: 2px;
-  }
-  
-  /* NAVBAR */
-  
-  .navbar {
-    background-color: #674582;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
-    padding: 24px;
-    z-index: 99;
-    position: fixed;
-    width: 100%;
-    height: 104px;
-  }
-  
-  .navbar__logo {
-    max-width: 200px;
-  }
-  
-  .navbar__box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  .navbar__nav {
-    font-size: 18px;
-    color: #fff;
-    display: flex;
-  }
-  
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 2px;
+}
+
+/* define que as imagens tem que ter o tamanho máximo da div mãe */
+.img-responsive {
+  width: 100%;
+}
+
+/* NAVBAR */
+
+.navbar {
+  background-color: #674582;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 24px;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  height: 104px;
+}
+
+.navbar__logo {
+  max-width: 200px;
+}
+
+.navbar__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.navbar__nav {
+  font-size: 18px;
+  color: #fff;
+  display: flex;
+}
 
 .navbar__nav > li {
-    margin: 0 16px;
-    font-weight: bold;
-  }
-  /* -------------------------------------------------------------------------------- */
-  
-  
-  /* HEADER */
-  
-  
-  
-  
-  /* --- BOTAO --- */
-    
-  
-  
-  
-  /* SECAO Maravilhosa */
-  
-  
-  
-  /* AUTORA */
-  
+  margin: 0 16px;
+  font-weight: bold;
+}
+/* -------------------------------------------------------------------------------- */
 
-  
-  
-  /* FOOTER */
- 
+/* HEADER */
+
+.header {
+  min-height: 80vh;
+  width: 100%;
+ background-size: cover;
+  background-image: url(../img/banner.png);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.header__titulo {
+  margin-bottom: 36px;
+  font-size: 72px;
+  color: rgb(3, 3, 3);
+  text-shadow: 
+  -1px -1px 0px #FFF, 
+  -1px 1px 0px #FFF,                    
+   1px -1px 0px #FFF,                  
+   1px 0px 0px #FFF;
+}
+
+/* --- BOTAO --- */
+
+/* SECAO Maravilhosa */
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+  margin: 36px auto;
+}
+
+.minibio {
+  display: flex;
+  max-width: 954px;
+  margin: 0 auto;
+}
+
+.minibio__img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 16px;
+  margin-right: 48px;
+}
+
+.minibio p {
+  width: 80%;
+  font-size: justify;
+}
+
+h3{
+  font-size: 36px;
+  text-align: center;
+  margin: 36px auto;
+}
+
+/* citacao */
+
+.citacao {
+  font-size: 20px;
+  border: 1px solid #674582;
+  padding: 36px;
+  line-height: 25px;
+  margin: 48px auto;
+}
+
+/* AUTORA */
+.autora {
+  background-color: #e4b7e5;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+}
+
+.autora__container {
+  display: flex;
+}
+
+.autora__img {
+  max-width: 200px;
+  margin-top: 18px;
+
+}
+
+.autora__info {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-left: 36px;
+}
+/* BOTAO */
+
+.botao{
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+}
+.botao a{
+background-color:  #c083b9;
+border: 2px solid #c083b9;
+border-radius: 5px;
+color: white;
+font-size: 20px;
+height: 40px;
+width: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* FOOTER */
 .rodape {
   background-color: #323534;
   color: white;
@@ -122,5 +221,24 @@
   padding: 10px;
 }
 
-  /* MEDIA QUERY */
-  
+/* MEDIA QUERY */
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 656px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+      max-width: 656px;
+    }
+}
+
+
+}
