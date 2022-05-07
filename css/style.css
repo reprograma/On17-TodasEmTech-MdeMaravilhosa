@@ -136,6 +136,10 @@ li {
   justify-content: center;
 }
 
+.rodape__redes-sociais a{
+ margin: 0 4px;
+}
+
 .rodape__cc {
   width: 100%;
   background-color: #292a2a;
@@ -209,6 +213,18 @@ li {
 }
 
 
+@media (max-width: 1440px) {
+  .header__box {
+    top: 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 80vw;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar__nav {
     display: none;
@@ -223,11 +239,20 @@ li {
   .navbar__logo {
     max-width: 196px;
   }
-  .container {
-    max-width: 80vw;
-  }
 
   .rodape__principal {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 425px) {
+  .header__box {
+    top: 250px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header__box {
+    top: 180px;
   }
 }
